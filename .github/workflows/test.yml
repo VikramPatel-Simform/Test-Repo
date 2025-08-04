@@ -2,11 +2,10 @@ name: Frontend Deploy (Caller)
 
 on:
   push:
-  pull_request:
-  workflow_dispatch:  # Manual trigger
+  workflow_dispatch:
 
 jobs:
-  call-frontend-deploy:
+  notify:
     uses: VikramPatel-Simform/Github-Actions/.github/workflows/reuse-discord.yml@main
     secrets:
       discord_webhook: ${{ secrets.DISCORD_WEBHOOK }}
