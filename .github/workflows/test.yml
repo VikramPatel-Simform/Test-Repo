@@ -7,6 +7,6 @@ on:
 
 jobs:
   call-frontend-deploy:
-    uses: VikramPatel-Simform/TEST-REPO/.github/workflows/reuse-discord.yml@main
+    uses: VikramPatel-Simform/Github-Actions/.github/workflows/reuse-discord.yml@main
     secrets:
       discord_webhook: ${{ secrets.DISCORD_WEBHOOK }}
